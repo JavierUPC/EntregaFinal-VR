@@ -24,6 +24,6 @@ public class Shoot : MonoBehaviour
             rb.velocity = firePoint.forward * bulletSpeed;
         }
 
-        Destroy(bullet, 5f);
+        //Destroy(bullet, 5f);
     }
 }
