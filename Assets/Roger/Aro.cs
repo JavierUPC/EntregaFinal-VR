@@ -7,7 +7,6 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class Aro : MonoBehaviour
 {
     private XRGrabInteractable grabInteractable;
-    private bool hasBeenGrabbed = false;
 
     void Start()
     {
@@ -23,15 +22,11 @@ public class Aro : MonoBehaviour
 
     private void OnRelease(SelectExitEventArgs args)
     {
-        if (hasBeenGrabbed)
+        // Cada vegada que deixes anar l'anella, creem un de nou
+        GestorAros gestor = FindObjectOfType<GestorAros>();
+        if (gestor != null)
         {
-            GestorAros gestor = FindObjectOfType<GestorAros>();
-            if (gestor != null)
-            {
-                gestor.CrearNouAro();
-            }
+            gestor.CrearNouAro();
         }
-
-        hasBeenGrabbed = true;
     }
 }
