@@ -8,6 +8,8 @@ public class Shoot : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private float bulletSpeed = 20f;
 
+    int contador = 0;
+
     public void shoot()
     {
         if (bulletPrefab == null || firePoint == null)
@@ -25,5 +27,11 @@ public class Shoot : MonoBehaviour
         }
 
         Destroy(bullet, 5f);
+    }
+
+    public void contarLatas()
+    {
+        contador++;
+        Debug.Log("Puntos: " + contador);
     }
 }

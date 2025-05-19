@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cans : MonoBehaviour
 {
     private Rigidbody rb;
+    public Shoot shooting;
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -18,5 +19,6 @@ public class Cans : MonoBehaviour
         }
 
         rb.isKinematic = false;
+        shooting.contarLatas();
     }
 }
