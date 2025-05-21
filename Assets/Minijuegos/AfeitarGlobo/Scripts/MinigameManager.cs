@@ -26,12 +26,14 @@ public class MinigameManager : MonoBehaviour
     public void BalloonPopped()
     {
         Debug.Log("Balloon Popped!");
+        //Sonido petar globo
         EndMinigame();
     }
 
     public void Win()
     {
         Debug.Log("Balloon Shaved!");
+        //Sonido Win
         balloon.GetComponent<Renderer>().material = winMaterial;
         StartCoroutine(WinTimer());
     }
