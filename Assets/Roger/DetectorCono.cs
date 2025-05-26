@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ConeDetector : MonoBehaviour
 {
+    public ParticleSystem confetti;  // <-- assigna'l des de l'inspector
+
     private Coroutine checkCoroutine;
 
     private void OnTriggerEnter(Collider other)
@@ -27,16 +29,20 @@ public class ConeDetector : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
 
-        // Verifica si el aro sigue dentro tras 1 segundo
         if (ring != null && ring.bounds.Intersects(GetComponent<Collider>().bounds))
         {
             Debug.Log($"Aro encertat a: {transform.parent.name}");
 
-            // Aquí puedes activar puntuación, efectos, etc.
-            // Ejemplo:
-            // transform.parent.GetComponent<AudioSource>()?.Play();
+            if (confetti != null) confetti.Play();
+
+            // Suma de punts
+            PuntuacioManager.Instance?.SumarPunts(10);
+
+            // Opcional: destruir l'aro encertat
+            Destroy(ring.gameObject, 1f); // o directament: Destroy(ring.gameObject);
         }
 
         checkCoroutine = null;
     }
+
 }
