@@ -1,23 +1,22 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GestorAros : MonoBehaviour
 {
-    [Header("Configuració")]
+    [Header("ConfiguraciÃ³")]
     public GameObject prefabAro;
     public Transform spawnPoint;
+    public GameObject aroOriginal;  // <- EmptyAnella real de l'escena
     public int maxAros = 3;
 
     private int arosLanzados = 0;
-
-    // Guardarem la posició i rotació originals per assegurar que no canvien
     private Vector3 posicioInicialAro;
     private Quaternion rotacioInicialAro;
+    private List<GameObject> arosInstanciats = new List<GameObject>();
 
     void Start()
     {
-        // Emmagatzemem la posició i rotació originals del spawnPoint
         if (spawnPoint != null)
         {
             posicioInicialAro = spawnPoint.position;
@@ -25,7 +24,12 @@ public class GestorAros : MonoBehaviour
         }
         else
         {
-            Debug.LogError("SpawnPoint no està assignat al GestorAros!");
+            Debug.LogError("SpawnPoint no assignat!");
+        }
+
+        if (aroOriginal == null)
+        {
+            Debug.LogError("AroOriginal no assignat!");
         }
     }
 
@@ -33,15 +37,45 @@ public class GestorAros : MonoBehaviour
     {
         if (arosLanzados < maxAros)
         {
-            Instantiate(prefabAro, posicioInicialAro, rotacioInicialAro);
-            arosLanzados++;
+            GameObject nouAro = Instantiate(prefabAro, posicioInicialAro, rotacioInicialAro);
+
+            //Assegurem-nos que nomÃ©s afegim les cÃ²pies, no lâ€™original
+            if (nouAro != aroOriginal)
+            {
+                arosInstanciats.Add(nouAro);
+                arosLanzados++;
+            }
         }
     }
 
-    // Per reiniciar si vols (opcional)
     public void ReiniciarAros()
     {
-        //reiniciar puntuación actual
+        //1. Eliminar NOMÃ‰S les cÃ²pies (aros instanciats)
+        foreach (GameObject aro in arosInstanciats)
+        {
+            if (aro != null)
+                Destroy(aro);
+        }
+
+        arosInstanciats.Clear();
         arosLanzados = 0;
+
+        //2. RecolÂ·locar lâ€™aro original
+        if (aroOriginal != null)
+        {
+            aroOriginal.transform.position = posicioInicialAro;
+            aroOriginal.transform.rotation = rotacioInicialAro;
+
+            //3. Reset de forces
+            Rigidbody rb = aroOriginal.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+            }
+
+            //4. Tornar-lo actiu (per si l'havÃ­em desactivat)
+            aroOriginal.SetActive(true);
+        }
     }
 }
