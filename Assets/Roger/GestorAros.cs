@@ -41,6 +41,7 @@ public class GestorAros : MonoBehaviour
     // Per reiniciar si vols (opcional)
     public void ReiniciarAros()
     {
+        //reiniciar puntuación actual
         arosLanzados = 0;
     }
 }

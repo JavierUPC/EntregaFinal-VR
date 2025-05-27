@@ -8,6 +8,8 @@ public class PuntuacioManager : MonoBehaviour
 
     public int puntuacioActual = 0;
 
+    // falta tambíen la high score
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -19,6 +21,7 @@ public class PuntuacioManager : MonoBehaviour
         puntuacioActual += punts;
         Debug.Log("Punts: " + puntuacioActual);
         // Aquí pots notificar la UI si vols actualitzar-la
+        //Enseñar los puntos en score y si ha sido la más alta hasta ahora ponerla en high score.
     }
 
     public void ReiniciarPunts()
