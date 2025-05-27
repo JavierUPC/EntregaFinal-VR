@@ -19,8 +19,12 @@ public class StartGameButton : MonoBehaviour
         // Eliminar aros existents
         foreach (GameObject aro in GameObject.FindGameObjectsWithTag("Ring"))
         {
-            Destroy(aro);
+            if (aro != null)
+            {
+                Destroy(aro); // Esto sí lo elimina de jerarquía
+            }
         }
+
 
         // Reiniciar contador d'aros
         if (gestorAros != null)
