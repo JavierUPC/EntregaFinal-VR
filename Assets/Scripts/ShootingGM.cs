@@ -23,6 +23,7 @@ public class ShootingGM : MonoBehaviour
 
     public void Shoot()
     {
+        Debug.Log("ha disparado!");
         if (shotsFired >= maxBullets)
         {
             return;

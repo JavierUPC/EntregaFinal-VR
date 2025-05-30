@@ -27,6 +27,7 @@ public class Cans : MonoBehaviour
         }
 
         rb.isKinematic = false;
+        Debug.Log("se desactiva kinematic");
         FindObjectOfType<ShootingGM>().AddPoint();
     }
 
