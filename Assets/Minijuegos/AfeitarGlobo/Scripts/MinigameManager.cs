@@ -18,6 +18,7 @@ public class MinigameManager : MonoBehaviour
     private float highScore = Mathf.Infinity;
 
     public bool isActive = false;
+    private bool balloonPopped = false;
 
     private void Start()
     {
@@ -25,12 +26,24 @@ public class MinigameManager : MonoBehaviour
         UpdateUI();
     }
 
+    void Update()
+    {
+        if (isActive && !balloonPopped)
+        {
+            float liveScore = Time.time - startTime;
+            currentScoreText.text = "SCORE: " + liveScore.ToString("F2") + "s";
+        }
+    }
+
     public void StartMinigame()
     {
         balloon.SetActive(true);
         foamManager.ResetFoam();
         isActive = true;
+        balloonPopped = false;
         startTime = Time.time;
+        currentScore = 0;
+        UpdateUI();
     }
 
     public void BalloonPopped()
@@ -38,11 +51,14 @@ public class MinigameManager : MonoBehaviour
         Debug.Log("Balloon Popped!");
         //Sonido petar globo
         //Parar de contar tiempo y reiniciarlo: no se guarda la score porque ha perdido el juego.
+        balloonPopped = true;
         EndMinigame(false);
     }
 
     public void Win()
     {
+        if (!isActive || balloonPopped) return;
+
         Debug.Log("Balloon Shaved!");
         currentScore = Time.time - startTime;
         if (currentScore < highScore)
@@ -51,9 +67,6 @@ public class MinigameManager : MonoBehaviour
         }
         UpdateUI();
         //Sonido Win
-        //Parar de contar el tiempo.
-        //el tiempo se muestra en score
-        //si el tiempo es mas alto que la high score se muestra en high score
         balloon.GetComponent<Renderer>().material = winMaterial;
         StartCoroutine(WinTimer());
     }
@@ -66,9 +79,9 @@ public class MinigameManager : MonoBehaviour
 
     private void EndMinigame(bool won)
     {
-        balloon.GetComponent<Renderer>().material = startMaterial;
         isActive = false;
         balloon.SetActive(false);
+        balloon.GetComponent<Renderer>().material = startMaterial;
 
         if (!won)
         {
