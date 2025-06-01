@@ -30524,19 +30524,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2053574549733476409, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.374
+      value: 11.305
       objectReference: {fileID: 0}
     - target: {fileID: 2053574549733476409, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.771
+      value: -0.859
       objectReference: {fileID: 0}
     - target: {fileID: 2053574549733476409, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.395
+      value: -7.466
       objectReference: {fileID: 0}
     - target: {fileID: 2053574549733476409, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.86164665
+      value: 0.709554
       objectReference: {fileID: 0}
     - target: {fileID: 2053574549733476409, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
       propertyPath: m_LocalRotation.x
@@ -30544,7 +30544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2053574549733476409, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.50750875
+      value: 0.70465106
       objectReference: {fileID: 0}
     - target: {fileID: 2053574549733476409, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
       propertyPath: m_LocalRotation.z
@@ -30556,12 +30556,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2053574549733476409, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 60.996
+      value: 89.603
       objectReference: {fileID: 0}
     - target: {fileID: 2053574549733476409, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4580181488244092451, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 716697312}
     - target: {fileID: 4580181488244092451, guid: 0813158fd38e40848b14883f48ef59da, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
