@@ -67,7 +67,7 @@ Durant el desenvolupament s’han trobat diversos reptes:
 
 ## 📽️ Video de Youtube
 
-[**Funtastic Fair** - Video de YOUTUBE](https://youtube.com/tuvideo)
+[**Funtastic Fair** - Video de YOUTUBE](https://youtu.be/xMmkkE84-gQ)
 
 
 ## 📝 Llicència
