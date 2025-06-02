@@ -20,6 +20,9 @@ public class MinigameManager : MonoBehaviour
     public bool isActive = false;
     private bool balloonPopped = false;
 
+    public AudioSource audioSource;
+    public AudioClip balloonPop;
+
     private void Start()
     {
         startMaterial = balloon.GetComponent<Renderer>().material;
@@ -48,6 +51,7 @@ public class MinigameManager : MonoBehaviour
 
     public void BalloonPopped()
     {
+        audioSource.PlayOneShot(balloonPop);
         Debug.Log("Balloon Popped!");
         //Sonido petar globo
         //Parar de contar tiempo y reiniciarlo: no se guarda la score porque ha perdido el juego.

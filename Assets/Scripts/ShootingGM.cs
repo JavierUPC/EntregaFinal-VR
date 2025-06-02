@@ -15,6 +15,9 @@ public class ShootingGM : MonoBehaviour
     private int shotsFired = 0;
     private Cans[] allCans;
 
+    public AudioClip shot;
+    public AudioSource audioSource;
+
     void Start()
     {
         allCans = FindObjectsOfType<Cans>();
@@ -23,6 +26,8 @@ public class ShootingGM : MonoBehaviour
 
     public void Shoot()
     {
+        audioSource.PlayOneShot(shot);
+
         Debug.Log("ha disparado!");
         if (shotsFired >= maxBullets)
         {
