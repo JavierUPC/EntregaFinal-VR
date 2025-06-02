@@ -43,7 +43,7 @@ public class CambiarAltura : MonoBehaviour
         if (xrCamera != null)
         {
             Vector3 currentPosition = transform.position;
-            currentPosition.y = xrCamera.position.y;
+            currentPosition.y = xrCamera.position.y - 0.7f;
             transform.position = currentPosition;
         }
     }
