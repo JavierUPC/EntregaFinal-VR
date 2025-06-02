@@ -8,8 +8,10 @@ public class PuntuacioManager : MonoBehaviour
     public static PuntuacioManager Instance;
 
     public int puntuacioActual = 0;
+    public int highScore = 0;
 
-    // falta tambíen la high score
+    public Text currentScoreText;
+    public Text highScoreText;
 
     private void Awake()
     {
@@ -17,17 +19,35 @@ public class PuntuacioManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
+    private void Start()
+    {
+        UpdateScoreUI();
+    }
+
     public void SumarPunts(int punts)
     {
         puntuacioActual += punts;
         Debug.Log("Punts: " + puntuacioActual);
-        // Aquí pots notificar la UI si vols actualitzar-la
-        //Enseñar los puntos en score y si ha sido la más alta hasta ahora ponerla en high score.
+        if (puntuacioActual > highScore)
+        {
+            highScore = puntuacioActual;
+        }
+        UpdateScoreUI();
     }
 
     public void ReiniciarPunts()
     {
         puntuacioActual = 0;
+        UpdateScoreUI();
+    }
+
+    private void UpdateScoreUI()
+    {
+        if (currentScoreText != null)
+            currentScoreText.text = "SCORE: " + puntuacioActual;
+
+        if (highScoreText != null)
+            highScoreText.text = "HIGH SCORE: " + highScore;
     }
 }
 
