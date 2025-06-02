@@ -986,6 +986,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (1)
@@ -1169,6 +1173,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (10)
@@ -3840,6 +3848,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (11)
@@ -7789,6 +7801,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (13)
@@ -10375,6 +10391,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale)
@@ -14387,7 +14407,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 1
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -14428,7 +14448,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!54 &1023333327
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15327,6 +15347,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (12)
@@ -17533,6 +17557,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (6)
@@ -17943,6 +17971,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (4)
@@ -19277,6 +19309,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (9)
@@ -19772,6 +19808,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (8)
@@ -21702,6 +21742,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (2)
@@ -25728,6 +25772,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (14)
@@ -26303,6 +26351,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (3)
@@ -28631,6 +28683,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (7)
@@ -28889,6 +28945,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b211ba130e201ec488e51ca80617f4e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 19909736e8cb4df4f8eef854c3ba89ab, type: 3}
       propertyPath: m_Name
       value: uploads_files_3387197_Plaster+Plate+V.2+(for+sale) (5)
