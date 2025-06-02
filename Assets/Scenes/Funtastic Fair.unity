@@ -17529,8 +17529,8 @@ MonoBehaviour:
   balloon: {fileID: 527076234}
   foamManager: {fileID: 527076236}
   winMaterial: {fileID: 2100000, guid: 727f87098255ad04987a60f5f08390bc, type: 2}
-  currentScoreText: {fileID: 0}
-  highScoreText: {fileID: 0}
+  currentScoreText: {fileID: 431605784}
+  highScoreText: {fileID: 926490847}
   isActive: 0
 --- !u!4 &1299657731
 Transform:
@@ -25624,8 +25624,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7396278978564332023, guid: 6b12f432fa58c224baf0d659706362be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396278978564332023, guid: 6b12f432fa58c224baf0d659706362be, type: 3}
       propertyPath: m_Renderer
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634317094661461186, guid: 6b12f432fa58c224baf0d659706362be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8634317094661461186, guid: 6b12f432fa58c224baf0d659706362be, type: 3}
       propertyPath: m_InteractableSource
